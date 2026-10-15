@@ -24,7 +24,7 @@ from werkzeug.serving import make_server
 from . import almacen, buscar, exportar, importar, motor, plantilla
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-WEB = os.path.join(RAIZ, "app", "web")
+WEB = os.path.join(RAIZ, "web")
 # Otra carpeta de datos, solo para pruebas o capturas: PATRIMONIO_DATOS=ruta
 DATOS = os.environ.get("PATRIMONIO_DATOS") or os.path.join(RAIZ, "mis_datos")
 DEMO = os.path.join(RAIZ, "demo", "cartera.json")
