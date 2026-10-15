@@ -1,0 +1,12 @@
+services:
+  rumbo:
+    image: ghcr.io/gasolini/rumbo:latest
+    container_name: rumbo
+    restart: unless-stopped
+    ports:
+      - "7777:8765"
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
+    volumes:
+      - ./mis_datos:/rumbo/mis_datos
